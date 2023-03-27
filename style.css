@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 * {
-    font-family: Arial;
+    font-family: 'Space Mono', monospace;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -11,19 +13,20 @@ html {
 }
 
 body {
-    background-color: #e8ebf2;
+    background-color: #CBE4DE;
 }
 
 .navbar {
     backdrop-filter: blur(10px);
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: end;
     padding-right: 40px;
-    padding-top: 30px;
+    padding: 20px;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .navbar nav ul {
@@ -41,8 +44,8 @@ body {
     font-weight: 400;
 }
 
-.navbar nav ul li a:hover{
-    color: #e63946;
+.navbar nav ul li a:hover {
+    color: #FF4500;
 }
 
 .main-body {
@@ -65,7 +68,7 @@ body {
     height: 100vh;
     justify-content: start;
     padding-left: 200px;
-    background-color: #e8ebf2;
+    background-color: #CBE4DE;
 }
 
 .title {
@@ -82,14 +85,14 @@ body {
     color: #323232;
 }
 
-#dec-1{
-    color: #e63946;
+#dec-1 {
+    color: #FF4500;
     font-size: 60px;
     font-family: Courier;
 
 }
 
-#dec-2{
+#dec-2 {
     font-size: 60px;
     font-family: Courier;
 
@@ -99,22 +102,170 @@ body {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #b6bcc7;
-    color: #323232;
+    background-color: #2E4F4F;
+    color: #CBE4DE;
     height: fit-content;
-    align-items: flex-start;
-    padding: 40px 15px;
+    align-items: center;
+    padding: 80px 15px;
 }
 
 #about h1 {
-    color: #e63946;
+    color: #FF4500;
     padding: 0 40px;
     padding-bottom: 30px;
     font-size: 30px;
     font-family: Courier;
 }
 
-#about p{
+#about p {
     padding: 0 40px;
     font-weight: 550;
+    text-align: center;
+}
+
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#timeline>h1 {
+    font-size: 30px;
+    font-family: Courier;
+    color: #FF4500;
+    padding-top: 150px;
+}
+
+#year {
+    padding-top: 50px;
+}
+
+.yr {
+    font-size: 20px;
+    position: relative;
+    right: 0;
+    color: #0E8388;
+}
+
+.cmp {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.year-container {
+    background-color: #2E4F4F;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 18px;
+}
+
+.year-container-sp {
+    background-color: #2E4F4F;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 10px;
+    border-radius: 18px;
+}
+
+.year-container-sp div h1,
+.year-container div h1 {
+    padding-bottom: 5px;
+    color: #CBE4DE;
+}
+
+.year-container-sp div p,
+.year-container div p {
+    color: #CBE4DE;
+    font-style: italic;
+    font-size: medium;
+}
+
+.year-circle {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+    background-color: #2C3333;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-circle-sp {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+    background-color: #2E4F4F;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#projects>h1 {
+    color: #FF4500;
+    padding: 0 40px;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-family: Courier;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact>h1 {
+    color: #FF4500;
+    padding: 0 40px;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-family: Courier;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type="submit"] {
+    background-color: #085B5D;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2E4F4F;
 }
